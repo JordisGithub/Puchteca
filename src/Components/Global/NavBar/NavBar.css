@@ -1,0 +1,179 @@
+  /* background-color: rgb(155, 44, 53); */
+  /* background-color: rgb(95, 129, 110); */
+  /* background-color: rgb(106, 142, 122); */
+  /* background-color: rgb(64, 173, 176); */
+
+nav {
+  /* border: solid green 2px; */
+  display: flex;
+  height: 180px;
+  align-items: center;
+}
+
+/* =========================
+======Nav Logo==============
+========================= */
+.brand-title {
+  margin-top: 3rem;
+  margin-left: 12rem;
+  height: 150px;
+  /* border: solid 2px red; */
+}
+
+.toggle-button {
+  display: none;
+}
+
+/* =========================
+======Nav Menu==============
+========================= */
+.navbar {
+  	display: flex;
+    width: 75vw;
+    margin-left: auto;
+    height: 100px;
+    margin: 3rem;
+    justify-content: flex-end;
+}
+
+/* ==================================
+======Nav Links =====================
+================================== */
+
+#navbar-links li {
+    /* border: solid 2px red; */
+  list-style: none;
+  width: auto;
+	padding: 0;
+	align-self: center;
+	height: 90px;
+  margin: auto;
+	display: flex;
+	align-items: center;
+}
+
+#navbar-links li a {
+	text-decoration: none;
+	color: black;
+	padding: 2rem;
+	font-style: normal;
+	text-transform: capitalize;
+	letter-spacing: 0.16em;
+	font-size: 14px;
+}
+
+#donateColor {
+  border-radius: 4px;
+  background-color: rgb(64, 173, 176);
+  margin: 20px;
+
+}
+
+
+.navbarLi:hover {
+	position: relative;
+	display: inline-block;
+	margin-top: 13px;
+}
+
+/* ==================================
+======Nav Menu Dropdown==============
+================================== */
+
+/* Style the dropdown content (hidden by default) */
+.dropdown-content {
+	display: none;
+	position: absolute;
+	top: 84px;
+	background-color: #f5f5f5;
+	z-index: 5;
+	border-radius: 5px;
+	font-size: 14px;
+  margin-top: 5px;
+  margin: auto;
+}
+
+/* Style the links inside the dropdown */
+.dropdown-content a {
+	float: none;
+	color: #000000;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+	text-align: left;
+}
+
+/* Add a dark background on topnav links and the dropdown button on hover */
+.topnav a:hover, 
+.dropdown:hover .dropbtn {
+	background-color: #f5f5f5;
+}
+
+/* Add a background to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: rgb(64, 173, 176);
+	color: #000000;
+}
+
+/* Show the dropdown menu when the user moves the mouse over the dropdown congtent*/
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+
+
+
+@media (max-width: 940px) {
+
+  /* =========================
+======Burger Menu==============
+========================= */
+
+.toggle-button {
+	position: absolute;
+	top: 5rem;
+	right: 6rem;
+	display: none;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 40px;
+	height: 31px;
+  display: flex;
+}
+
+.toggle-button .bar {
+	height: 4px;
+	width: 100%;
+  background-color: rgb(155, 44, 53);
+}
+
+
+  
+	#navbar-links {
+		display: none;
+		width: 100%;
+	}
+	.vector {
+		display: none;
+	}
+	.navbar {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	#navbar-links ul {
+		width: 100%;
+		flex-direction: column;
+	}
+
+	#navbar-links li {
+		text-align: center;
+	}
+
+	#navbar-links li a {
+		padding: 0.5rem 1rem;
+	}
+
+	#navbar-links.active {
+		display: flex;
+	}
+}

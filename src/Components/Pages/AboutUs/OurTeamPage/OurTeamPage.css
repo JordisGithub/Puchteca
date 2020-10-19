@@ -1,0 +1,30 @@
+.purpleRect-ourteam {
+  width: 100%;
+  height: 6px;
+  background: #5642cf;
+}
+
+.ourteam-container {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  width: 50%;
+}
+
+.titles {
+  display: flex;
+  flex-direction: row;
+  white-space: nowrap;
+  margin-bottom: 80px;
+}
+
+.name-cards {
+}
+
+.titles .team-name {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: 51px;
+}
